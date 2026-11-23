@@ -63,7 +63,7 @@ class Television:
 
     def volume_up(self) -> None:
         """
-        Method to turn volume up and wrap around
+        Method to turn volume up
         """
         if self.__status:
             self.__muted = False
@@ -82,6 +82,11 @@ class Television:
                 self.__volume = Television.MIN_VOLUME
 
     def __str__(self) -> str:
+        """
+        Method to return television details
+
+        Returns: Strings containing television details
+        """
         if self.__muted:
             return f"Power = {self.__status}, Channel = {self.__channel}, Volume = {Television.MIN_VOLUME}"
         else:

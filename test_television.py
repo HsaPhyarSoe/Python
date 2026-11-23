@@ -9,7 +9,7 @@ def test_power():
     tv = television.Television()
     tv.power()          #on
     assert str(tv) == "Power = True, Channel = 0, Volume = 0"
-    tv.power()          #of
+    tv.power()          #off
     assert str(tv) == "Power = False, Channel = 0, Volume = 0"
 
 def test_mute():
